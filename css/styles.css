@@ -23,30 +23,13 @@ body {
     font-style: normal;
     font-weight: 500;
 }
-button {
-    background-color: var(--iris,#4d5ae5);
-    color: var(--white,ffffff);
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.64px;
-    cursor: pointer;
-    border-radius: 4px;
-    box-shadow: black;
-
-}
-button:hover {
-    background-color: var(--ocean);
-}
-button:focus {
-    background-color: var(--ocean);
-}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
 a {
-    color: var(--navyblue,#2E2F42);
+    color: var(--navyblue);
     text-decoration: none;
     font-size: 16px;
     line-height: 24px;
@@ -62,11 +45,8 @@ a:active {
     color: var(--ocean);
     text-decoration: underline;
 }
-.container {
-    width: 1258px;
-}
 .logo {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-family: 'Raleway',sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -76,7 +56,7 @@ a:active {
     text-transform: uppercase;
 }
 .logo-lower {
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
     font-family: 'Raleway',sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -93,23 +73,23 @@ a:active {
     
 }
 .nav-item-link {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-size: 16px;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
 }
 .address-list {
-    color: var(--slate, #434455);
+    color: var(--slate);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
 }
-.section-main{
+.section-hero{
     background-color: var(--navyblue);
 }
-.main-h1 {
+.hero-title {
     color: var(--white);
     text-align: center;
     font-size: 56px;
@@ -117,8 +97,24 @@ a:active {
     line-height: 60px; /* 107.143% */
     letter-spacing: 1.12px;
 }
-.feature-h2 {
-    color: var(--navyblue, #2E2F42);
+.hero-button{
+    background-color: var(--iris);
+    color: var(--white);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: black;
+}
+.hero-button:hover {
+    background-color: var(--ocean);
+}
+.hero-button:focus {
+    background-color: var(--ocean);
+}
+.feature-title {
+    color: var(--navyblue,);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -127,7 +123,7 @@ a:active {
     text-transform: capitalize;
 }
 .feature-list-item-title {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue,);
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
@@ -136,14 +132,23 @@ a:active {
 .feature-list-item-subtitle {
     color: var(--light-slate);
 }
-.features-list-pictures {
+.services-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+.services-list-pictures {
     display: inline;
+}
+.services-list-pictures-item {
+    display: inline-block;
 }
 .section-ourteam {
     background-color: var(--cloud);
 }
 .ourteam-title {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -152,11 +157,15 @@ a:active {
     text-transform: capitalize;
 }
 .ourteam-list {
+
+    display: inline;
+}
+.ourteam-list-item{
     background-color: var(--white);
     display: inline-block;
 }
 .ourteam-list-item-title {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     text-align: center;
     font-size: 20px;
     line-height: 24px; /* 120% */
@@ -168,7 +177,27 @@ a:active {
 .filter-list {
     text-transform: capitalize;
     list-style-type: none;
-
+}
+.filter-list-item{
+    display: inline;
+}
+.filter-list-item button{
+    background-color: var(--cornflower);
+    color: var(--iris);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: black;
+}
+.filter-list-item button:hover {
+    background-color: var(--ocean);
+    color: var(--cloud)
+}
+.filter-list-item button:focus {
+    background-color: var(--ocean);
+    color: var(--cloud)
 }
 .demoimg {
     background-color: var(--cornflower);
@@ -178,7 +207,7 @@ a:active {
     list-style-type: none;
 }
 .demoimg-list-item-title {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-size: 20px;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
