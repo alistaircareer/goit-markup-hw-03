@@ -43,7 +43,10 @@ a:focus {
 }
 a:active {
     color: var(--ocean);
-    text-decoration: underline;
+}
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .logo {
     color: var(--navyblue);
@@ -180,6 +183,7 @@ a:active {
 }
 .filter-list-item{
     display: inline;
+
 }
 .filter-list-item button{
     background-color: var(--cornflower);
@@ -199,20 +203,31 @@ a:active {
     background-color: var(--ocean);
     color: var(--cloud)
 }
-.demoimg {
+.demo {
     background-color: var(--cornflower);
 }
-.demoimg-list {
+.demo-list {
     text-transform: capitalize;
     list-style-type: none;
+
 }
-.demoimg-list-item-title {
+.demo-list-item {
+    display: flex;
+    width: 360px;
+    height: 420px;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+}
+.demo-list-item-title {
     color: var(--navyblue);
     font-size: 20px;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
 }
-.demoimg-list-item-subtitle {
+.demo-list-item-subtitle {
     color: var(--slate);
 }
 footer {
