@@ -51,7 +51,11 @@ a:focus {
 a:active {
     color: var(--ocean);
 }
-.section {
+.container {
+    width: 1154px;
+    margin: 0;
+}
+section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -80,6 +84,12 @@ a:active {
 }
 .nav-item {
     text-transform: capitalize;
+    display: flex;
+    width: 1440px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
     
 }
 .nav-item-link {
@@ -98,6 +108,9 @@ a:active {
 }
 .section-hero{
     background-color: var(--navyblue);
+    width: 1440px;
+    height: 600px;
+    flex-shrink: 0;
 }
 .hero-title {
     color: var(--white);
@@ -123,6 +136,10 @@ a:active {
 .hero-button:focus {
     background-color: var(--ocean);
 }
+.feature section {
+    width: 1440px;
+    height: 2592px;
+}
 .feature-title {
     color: var(--navyblue,);
     text-align: center;
@@ -131,6 +148,16 @@ a:active {
     line-height: 40px; /* 111.111% */
     letter-spacing: 0.72px;
     text-transform: capitalize;
+}
+.feature-list {
+    display:inline-flex;
+}
+.feature-list-item {
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 .feature-list-item-title {
     color: var(--navyblue,);
@@ -142,17 +169,26 @@ a:active {
 .feature-list-item-subtitle {
     color: var(--light-slate);
 }
-.services-title{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.4px;
+.services section {
+    width: 1440px;
+    height: 2592px;
+}
+.services-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
 }
 .services-list-pictures {
-    display: inline;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .services-list-pictures-item {
-    display: inline-block;
+    display: inline-flex;
+
 }
 .section-ourteam {
     background-color: var(--cloud);
@@ -167,7 +203,6 @@ a:active {
     text-transform: capitalize;
 }
 .ourteam-list {
-
     display: inline;
 }
 .ourteam-list-item{
@@ -190,7 +225,6 @@ a:active {
 }
 .filter-list-item{
     display: inline;
-
 }
 .filter-list-item button{
     background-color: var(--cornflower);
