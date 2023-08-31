@@ -1,4 +1,4 @@
-HTML, body {
+* {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -28,6 +28,13 @@ ul {
     margin: 0;
     padding: 0;
   }
+button {
+    font-family: inherit;
+    border:unset;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 32px;
+}
 a {
     color: var(--navyblue);
     text-decoration: none;
@@ -101,14 +108,14 @@ a:active {
     letter-spacing: 1.12px;
 }
 .hero-button{
-    background-color: var(--iris);
+    background: var(--iris);
     color: var(--white);
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.64px;
     cursor: pointer;
     border-radius: 4px;
-    box-shadow: black;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .hero-button:hover {
     background-color: var(--ocean);
@@ -191,17 +198,21 @@ a:active {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.64px;
+    padding: 12px 24px;
     cursor: pointer;
+    border: 1px solid var(--cornflower);
     border-radius: 4px;
     box-shadow: black;
 }
 .filter-list-item button:hover {
     background-color: var(--ocean);
-    color: var(--cloud)
+    color: var(--white);
+    border: 1px solid var(var(--ocean));
 }
 .filter-list-item button:focus {
     background-color: var(--ocean);
-    color: var(--cloud)
+    color: var(--white);
+    border: 1px solid var(var(--ocean));
 }
 .demo {
     background-color: var(--cornflower);
