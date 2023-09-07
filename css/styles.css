@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
     border: 0px;}
+*,*::before,*::after {
+    box-sizing: border-box;
+}
 :root {
     --iris:#4D5AE5;
     --ocean:#404BBF;
@@ -107,19 +110,11 @@ section {
     width: 1440px;
     height: 2592px;}
 .feature-list {
-    display: flex;
-    box-sizing: border-box;
-    width: 264px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;}
-.feature-list-item {
-    display: block;
-    box-sizing: content-box;
+    box-sizing:border-box;
     width: 264px;
     height: 104px;
-    padding: 20px;
-}
+    padding: 20px;}
+
 .feature-list-item-title, .ourteam-list-item-title, .demo-list-item-title {
     color: var(--navyblue);
     font-size: 20px;
@@ -147,10 +142,11 @@ section {
     text-transform: capitalize;
 }
 .services-list-pictures {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px;
-    padding-bottom: 0px;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 360px;
 }
 .services-list-pictures-item {
     position: relative;
