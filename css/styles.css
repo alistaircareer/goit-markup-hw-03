@@ -101,8 +101,8 @@ section {
     letter-spacing: 1.12px;
     margin-bottom: 48px;}
 .hero-button-layout{
-    display:flex;
-    justify-content: center;
+    display:block;
+    margin: 0 auto;
 }
 .hero-button{
     background: var(--iris);
