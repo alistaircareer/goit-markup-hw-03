@@ -41,7 +41,6 @@ a {
     width: 1158px;
     margin: 0 auto;}
 section {
-    padding-top: 120px;
     padding-bottom: 120px;}
 .logo {
     color: var(--navyblue);
@@ -63,10 +62,11 @@ section {
     text-transform: uppercase;}
 .web {
     color: var(--iris)}
+.nav-bar {padding: 24px;}
 .navcontainer {
     display: flex;
     justify-content: space-between;
-    padding: 24px;
+
 }
 .nav-list {
     display:inline-flex;
@@ -102,6 +102,7 @@ section {
     font-weight: 700;
     line-height: 60px; /* 107.143% */
     letter-spacing: 1.12px;
+    padding-top: 148px;
     margin-bottom: 48px;}
 .hero-button{
     display:block;
@@ -126,6 +127,7 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 8px;
+    padding-top:120px;
 }
 .features-list-item{
     width: 264px;
@@ -137,13 +139,17 @@ section {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px; /* 120% */
-    letter-spacing: 0.4px;
+    letter-spacing: 0.4px
+    margin-bottom: 8px;
 }
 .features-list-item-subtitle, .ourteam-list-item-subtitle, .demo-list-item-subtitle {
     color: var(--slate);
     font-size: 16px;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
+}
+.section-services {
+    padding: 0px;
 }
 .services section {
     width: 1440px;
@@ -159,13 +165,11 @@ section {
     text-transform: capitalize;
 }
 .services-list-pictures {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 24px;
     margin-top: 112px;
 }
 .services-list-pictures-item {
-    justify-content: space-between;
     width: 360px;
     height: 300px;
 }
@@ -200,6 +204,7 @@ section {
 .ourteam-list-item{
     background-color: var(--white);
 }
+.filter {padding 96px 0 72px;}
 .filter-list {
     text-transform: capitalize;
     list-style-type: none;
@@ -226,12 +231,14 @@ section {
     border: 1px solid var(--ocean);
 }
 .demo {
-    background-color: var(--cornflower);
+    background-color: var(--white)
+    padding-top 0;
 }
 .demo-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
+    row-gap: 48px;
 
 }
 .demo-list-item {
@@ -245,13 +252,14 @@ section {
     flex-shrink: 0;
 }
 .demo-list-item-card{
+    background-color: var(--white);
     display: flex;
-    padding: 0px 16px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 8px;
     align-self: stretch;
+    padding: 36 16px;
+
 }
 .demo-list-item-pictures {
     width: 360px;
@@ -264,11 +272,11 @@ section {
     letter-spacing: 0.32px;
 }
 .footer-container {
-    padding:24px;
     flex-shrink: 0;
 }
 footer {
-    background-color: var(--navyblue);
+    padding: 100px;
+    background-color: var(--navyblue)
 }
 .footer-content {
     width: 264px;
