@@ -250,6 +250,7 @@ section {
     align-items: flex-start;
     gap: 32px;
     flex-shrink: 0;
+    border: 1px solid var(--cornflower);
 }
 .demo-list-item-card{
     background-color: var(--white);
