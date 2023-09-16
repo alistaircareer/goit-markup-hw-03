@@ -139,7 +139,7 @@ section {
     font-size: 20px;
     font-weight: 500;
     line-height: 24px; /* 120% */
-    letter-spacing: 0.4px
+    letter-spacing: 0.4px;
     margin-bottom: 8px;
 }
 .features-list-item-subtitle, .ourteam-list-item-subtitle, .demo-list-item-subtitle {
@@ -204,7 +204,7 @@ section {
 .ourteam-list-item{
     background-color: var(--white);
 }
-.filter {padding 96px 0 72px;}
+.filter {padding: 96px 0 72px;}
 .filter-list {
     text-transform: capitalize;
     list-style-type: none;
